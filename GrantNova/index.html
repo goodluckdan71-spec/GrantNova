@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GrantNova Funding Network</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:#f8fafc;color:#334155;line-height:1.6}
+header{position:sticky;top:0;background:#0f172a;padding:15px 8%;display:flex;justify-content:space-between;align-items:center;z-index:1000}
+.logo{color:#fff;font-size:28px;font-weight:bold}
+nav a{color:#fff;text-decoration:none;margin-left:20px}
+.hero{min-height:90vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:40px;background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1400&q=80') center/cover;color:#fff}
+.hero h1{font-size:3rem;margin-bottom:15px}
+.btn{background:#22c55e;color:#fff;padding:14px 28px;border-radius:8px;text-decoration:none;display:inline-block}
+section{padding:80px 8%}
+.section-title{text-align:center;font-size:2rem;margin-bottom:40px;color:#0f172a}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}
+.card{background:#fff;padding:25px;border-radius:12px;box-shadow:0 5px 15px rgba(0,0,0,.08)}
+.card:hover{transform:translateY(-6px)}
+.dark{background:#0f172a;color:#22c55e}
+.form-wrap{max-width:800px;margin:auto}
+input,select,textarea{width:100%;padding:14px;margin-bottom:12px;border:1px solid #ddd;border-radius:8px}
+button{background:#22c55e;color:#fff;border:none;padding:14px;border-radius:8px;cursor:pointer;width:100%}
+.contact-box{background:#fff;padding:25px;border-radius:12px;box-shadow:0 5px 15px rgba(0,0,0,.08)}
+footer{background:#0f172a;color:#fff;text-align:center;padding:40px 20px}
+.social a{color:#fff;font-size:22px;margin:0 10px}
+@media(max-width:768px){nav{display:none}.hero h1{font-size:2.2rem}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">GrantNova</div>
+<nav>
+<a href="#about">About</a>
+<a href="#grants">Programs</a>
+<a href="#apply">Apply</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<div>
+<h1>Funding Opportunities For Individuals, Businesses & Communities</h1>
+<p>Explore grant opportunities and submit your application securely.</p><br>
+<a href="#apply" class="btn">Apply Now</a>
+</div>
+</section>
+
+<section id="about">
+<h2 class="section-title">About GrantNova</h2>
+<p style="text-align:center;max-width:900px;margin:auto">GrantNova connects applicants with funding opportunities through a transparent application process and dedicated support.</p>
+</section>
+
+<section>
+<h2 class="section-title">Why Applicants Trust Us</h2>
+<div class="grid">
+<div class="card">Secure Application Portal</div>
+<div class="card">Privacy Protection</div>
+<div class="card">Transparent Review Process</div>
+<div class="card">Dedicated Support Team</div>
+</div>
+</section>
+
+<section id="grants">
+<h2 class="section-title">Funding Categories</h2>
+<div class="grid">
+<div class="card">Business Grants</div>
+<div class="card">Education Grants</div>
+<div class="card">Agriculture Grants</div>
+<div class="card">Women Empowerment</div>
+<div class="card">Youth Development</div>
+<div class="card">Community Projects</div>
+</div>
+</section>
+
+<section class="dark">
+<h2 class="section-title" style="color:rgb(250, 249, 249)">Application Process</h2>
+<div class="grid">
+<div class="card">1. Complete Application</div>
+<div class="card">2. Eligibility Review</div>
+<div class="card">3. Assessment Stage</div>
+<div class="card">4. Funding Decision</div>
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Frequently Asked Questions</h2>
+<div class="card"><strong>Do grants require repayment?</strong><p>Most grants do not require repayment, subject to program terms.</p></div><br>
+<div class="card"><strong>Can anyone apply?</strong><p>Eligibility varies by funding program.</p></div>
+</section>
+
+<section id="contact">
+<h2 class="section-title">Contact Information</h2>
+<div class="contact-box">
+<p><i class="fa-solid fa-location-dot"></i> Carlos A Velazquez PO Box 12345 Vega Alta, PR 00694</p>
+<p><i class="fa-solid fa-envelope"></i> support@grantnova.org</p>
+<p><i class="fa-solid fa-phone"></i> +1 (447) 201-9410</p>
+</div>
+</section>
+
+<section id="apply">
+<h2 class="section-title">Grant Application Form</h2>
+<div class="form-wrap">
+<form id="grantForm" action="https://formspree.io/f/mjgdkaaj" method="POST">
+<input type="text" name="full_name" placeholder="Full Name" required>
+<input type="email" name="email" placeholder="Email Address" required>
+<input type="tel" name="phone" placeholder="Phone Number" required>
+<input type="text" name="country" placeholder="Country" required>
+<select name="grant_type" required>
+<option value="">Select Grant Category</option>
+<option>Business Grant</option>
+<option>Education Grant</option>
+<option>Agriculture Grant</option>
+<option>Community Grant</option>
+<option> Small Business Development Grant </option>
+<option> Women Empowerment Program</option>
+</select>
+<input type="text" name="project_title" placeholder="Project Title" required>
+<input type="number" name="amount" placeholder="Funding Amount Requested" required>
+<textarea name="project_description" rows="6" placeholder="Describe your project"></textarea>
+<button type="submit">Submit Application</button>
+</form>
+<script>
+document.getElementById('grantForm').addEventListener('submit', function() {
+    setTimeout(function() {
+        location.reload();
+    }, 3000);
+});
+</script>
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Privacy & Security</h2>
+<p style="text-align:center;max-width:900px;margin:auto">Applicant information is used only for application processing and communication. Banking information is not requested during the initial application stage.</p>
+</section>
+
+<footer>
+<h3>GrantNova Funding Network</h3>
+<p>Connecting opportunities with ambition.</p>
+
+<div class="social">
+<a href="#"><i class="fab fa-facebook"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-linkedin"></i></a>
+<a href="#"><i class="fab fa-x-twitter"></i></a>
+</div>
+
+<div class="footer-links">
+
+<a href="privacy.html">Privacy Policy</a>
+
+<a href="terms.html">Terms & Conditions</a>
+
+</div>
+
+<p style="margin-top:15px">© 2026 GrantNova Funding Network. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
